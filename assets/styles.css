@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+    font-family: 'Merriweather', serif;
+}
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img {
+    width: 35%;
+    padding-top: 1.2rem;
+}
+.navbar {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+.nav-list {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+.nav-list li {
+    list-style: none;
+    padding: 25px 30px;
+}
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+.nav-list li a:hover {
+    text-decoration: none;
+    color: gray;
+}
+.background {
+    background: rgba(0, 0, 0, .7) url('bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.firstSection {
+    height: 100vh;
+}
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 80%;
+}
+.firstHalf {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 50%;
+    margin: auto;
+}
+.secondHalf {
+    width: 30%;
+}
+.secondHalf img {
+    width: 60%;
+    padding: 4px 0;
+    border-radius: 100%;
+    display: block;
+    margin: auto;
+}
+.text-big {
+    font-size: 50px;
+}
+.text-small {
+    font-size: 25px;
+}
+.button {
+    text-align: left;
+}
+.btn {
+    padding: 8px 20px;
+    margin: 7px 4px;
+    border: 2px solid white;
+    border-radius: 7px;
+    font-size: 16px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+.btn-sm {
+    padding: 5px 10px;
+    vertical-align: middle;
+}
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+}
+.section-left {
+    flex-direction: row-reverse;
+}
+.paras {
+    padding: 0 65px;
+}
+.sectionTag {
+    padding: 16px 0;
+}
+.sectionSubTag {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact {
+    display: flex;
+    flex-direction: row-reverse;
+    background: rgba(0, 0, 0, .7) url('contact.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 833px;
+}
+.rightContact {
+    margin: auto;
+    color: white;
+}
+.rightContact h2 {
+    font-size: 2rem;
+}
+.contactEmail a {
+    text-decoration: none;
+    color: white;
+}
+.text-center {
+    text-align: center;
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form {
+    max-width: 48%;
+    margin: auto;
+}
+::placeholder {
+    font-style: italic;
+    color: aliceblue;
+}
+.form-input {
+    margin: 15px auto;
+    width: 100%;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 5px 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    opacity: .5;
+    color: white;
+}
+.btn-dark {
+    color: black;
+    border: 2px solid gray;
+}
+footer {
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.burger {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+.line {
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+.btn-yellow {
+    background-color: #f0c929;
+}
+.form h1 {
+    color: white;
+}
+.rightContact {
+    line-height: 2.3em;
+}
+.img1, .img2, .img3 {
+    height: auto;
+    width: 100%;
+}
+.paras h1 {
+    font-size: 2em;
+}
+.paras p {
+    font-size: 1.1em;
+}
+.paras {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.face-icon, .insta-icon, .git-icon, .twitter-icon, .web-icon {
+    width: 40px;
+    height: 40px;
+    padding: .7em;
+}
+.contactButtons {
+    text-align: left;
+}
+.success-div {
+    width: 100%;
+    height: 40vh;
+    background-color: #e9ecef;
+}
+.success-div h1 {
+    text-align: center;
+    padding-top: 2em;
+}
+.success-div p {
+    text-align: center;
+    padding-top: 2em;
+}
+@media only screen and (max-width: 1140px) {
+    .nav-list {
+        flex-direction: column;
+    }
+    .navbar {
+        height: 300px;
+        flex-direction: column;
+        transition: all 0.6s ease-out;
+        align-items: center;
+    }
+    .button {
+        text-align: center;
+    }
+    .secondHalf {
+        padding-top: 2rem;
+    }
+    .burger {
+        display: block;
+    }
+    .h-nav-resp {
+        height: 72px;
+    }
+    .v-class-resp {
+        opacity: 0;
+    }
+    .box-main {
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .section {
+        flex-direction: column-reverse;
+    }
+    .text-small {
+        text-align: center;
+    }
+    .text-big {
+        text-align: center;
+    }
+    .buttons {
+        text-align: center;
+    }
+    .paras {
+        padding: 0;
+        text-align: left;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contactEmail {
+        text-align: center;
+    }
+    .img1, .img2, .img3 {
+        height: auto;
+        width: 50%;
+    }
+    .thumbnail {
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .paras p {
+        text-align: justify;
+    }
+    .form-input {
+        width: 120%;
+    }
+    .contactButtons {
+        text-align: center;
+    }
+}
