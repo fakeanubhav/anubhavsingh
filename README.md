@@ -1,2 +1,2 @@
 # Check the website on 
-### https://singhanubhavme.github.io/anubhavsingh/
+### https://singhanubhav.me/anubhavsingh/
